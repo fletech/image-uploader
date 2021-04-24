@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel='stylesheet' href='./style.css' />
+  </head>
+  <body>
+
+     <main class="container">
+          <div class="heading-container">
+               <h2 class="title">Upload your image</h2>
+               <h2 class="data-fetch"></h2>
+               <small>File should be in format .jpeg, .png ...</small>
+          </div>
+
+          <div class="form-container">
+               <section class="form">
+
+                    <div class="content">
+                         <div class="drag-container">
+                              <img src="./assets/drag-background.svg" alt="drag-background">
+                              <small>Drag & Drop your image here</small>
+                              
+                         </div> 
+     
+                         <div>
+                              <small>Or</small>
+                         </div>
+                    
+                         <div class="file-selector">
+                              <button type="button" class="button-file">Choose a file</button>
+                         </div> 
+                    </div>
+
+                    <div class="content-uploaded hidden">
+                         <div class="filename-container">
+                              <label>Name your file: </label>
+                              <input id="imageName" name="imageName" type="text"><br>
+                         </div>
+
+                         <div class="image-uploaded">
+                              <img id="image-preview" src="#" alt="image preview">
+                         </div> 
+
+                         <div class="submit">
+                              <button type="submit" class="button-submit">Upload!</button>
+                         </div> 
+                    </div>
+
+                    <input  id="inputFile" name="imageUploaded"  type="file" hidden>
+                   
+
+               </section> 
+
+               
+          </div>
+          
+     </main>
+     
+
+    
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
